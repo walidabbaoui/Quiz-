@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz interactif</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./image/gui_form_tool_tip_icon_157645.png">
+   
+</head>
+<body>
+    <div id="home-screen" class="screen">
+        <h1>Bienvenue dans le Quiz</h1>
+        <button id="start-btn">Commencer le Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="screen">
+        <div id="question-container">
+            <p id="question-text"></p>
+            <div id="options-container">
+            </div>
+        </div>
+        <div id="timer-container">
+            <p>Temps restant: <span id="timer">15</span> secondes</p>
+        </div>
+        <div id="progress-container">
+            <p>Question <span id="current-question">1</span> sur 10</p>
+        </div>
+    </div>
+
+    <div id="results-screen" class="screen">
+        <h1>Résultats</h1>
+        <p id="final-score">Votre score: 0/10</p>
+        <button id="retry-btn">Rejouer</button>
+        <button id="exit-btn">Quitter</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
